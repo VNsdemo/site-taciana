@@ -1,5 +1,6 @@
 export default function Home() {
-  const whatsapp = "https://wa.me/5535999522272";
+  const whatsapp =
+    "https://wa.me/5535999522272?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20atendimento%20jur%C3%ADdico.";
 
   const areas = [
     {
@@ -28,6 +29,15 @@ export default function Home() {
     },
   ];
 
+  const diferenciais = [
+    "Atendimento presencial e online",
+    "Comunicação clara com o cliente",
+    "Análise cuidadosa de cada caso",
+    "Estratégia jurídica personalizada",
+    "Atuação ética e responsável",
+    "Compromisso com segurança jurídica",
+  ];
+
   return (
     <main className="min-h-screen bg-[#f7f4ee] text-[#1f1a17]">
       <a
@@ -35,7 +45,7 @@ export default function Home() {
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Falar no WhatsApp"
-        className="fixed bottom-6 right-6 z-50 rounded-full bg-[#8a6a3f] px-5 py-4 text-sm font-semibold text-white shadow-lg transition hover:scale-105 hover:opacity-95"
+        className="fixed bottom-5 right-5 z-50 rounded-full bg-[#8a6a3f] px-5 py-4 text-sm font-semibold text-white shadow-lg transition hover:scale-105 hover:opacity-95"
       >
         WhatsApp
       </a>
@@ -43,7 +53,7 @@ export default function Home() {
       <header className="sticky top-0 z-40 border-b border-[#e5ddd1] bg-white/90 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
           <div>
-            <p className="text-lg font-semibold tracking-wide">
+            <p className="text-base font-semibold tracking-wide md:text-lg">
               Taciana Advocacia e Assessoria Jurídica
             </p>
             <p className="text-sm text-[#6b6258]">Advogada</p>
@@ -63,24 +73,24 @@ export default function Home() {
         </div>
       </header>
 
-      <section className="mx-auto max-w-6xl px-6 py-20 md:py-28">
-        <div className="grid items-center gap-12 md:grid-cols-2">
+      <section className="mx-auto max-w-6xl px-6 py-12 md:py-16">
+        <div className="grid gap-8 md:grid-cols-[1.4fr_0.8fr] md:items-center">
           <div>
             <p className="mb-4 text-sm font-medium uppercase tracking-[0.25em] text-[#8a6a3f]">
               Advocacia e Assessoria Jurídica
             </p>
 
-            <h1 className="text-4xl font-bold leading-tight md:text-6xl">
+            <h1 className="max-w-4xl text-4xl font-bold leading-tight md:text-6xl">
               Atendimento jurídico com clareza, estratégia e confiança
             </h1>
 
-            <p className="mt-6 max-w-xl text-lg leading-8 text-[#5c534a]">
+            <p className="mt-5 max-w-2xl text-lg leading-8 text-[#5c534a]">
               Soluções jurídicas com atendimento humanizado, análise cuidadosa
               de cada caso e atuação comprometida com a proteção dos seus
               direitos.
             </p>
 
-            <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+            <div className="mt-7 flex flex-col gap-4 sm:flex-row">
               <a
                 href={whatsapp}
                 target="_blank"
@@ -99,23 +109,23 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="rounded-[2rem] border border-[#e5ddd1] bg-white p-8 shadow-sm">
+          <div className="rounded-[2rem] border border-[#e5ddd1] bg-white p-6 shadow-sm md:p-7">
             <p className="text-sm uppercase tracking-[0.2em] text-[#8a6a3f]">
               Atendimento
             </p>
 
-            <p className="mt-4 leading-8 text-[#4e463e]">
-              Presencial em Varginha/MG e também online, com atenção
-              individualizada e orientação jurídica clara em todas as etapas.
+            <p className="mt-4 leading-7 text-[#4e463e]">
+              Presencial em Varginha/MG e também online, com orientação clara,
+              atendimento individualizado e acompanhamento em todas as etapas.
             </p>
 
-            <div className="my-8 h-px bg-[#ece4d8]" />
+            <div className="my-6 h-px bg-[#ece4d8]" />
 
             <p className="text-sm uppercase tracking-[0.2em] text-[#8a6a3f]">
               Endereço
             </p>
 
-            <p className="mt-4 leading-8 text-[#4e463e]">
+            <p className="mt-4 leading-7 text-[#4e463e]">
               Av. Cel. José Alves, 361 - Sala 304
               <br />
               Vila Pinto, Varginha/MG
@@ -124,7 +134,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="sobre" className="mx-auto max-w-6xl px-6 py-16">
+      <section id="sobre" className="mx-auto max-w-6xl px-6 py-12 md:py-14">
         <div className="grid gap-8 md:grid-cols-2">
           <div>
             <p className="text-sm uppercase tracking-[0.2em] text-[#8a6a3f]">
@@ -135,7 +145,7 @@ export default function Home() {
               Atuação séria e personalizada
             </h2>
 
-            <p className="mt-6 leading-8 text-[#5c534a]">
+            <p className="mt-5 leading-8 text-[#5c534a]">
               O escritório atua com ética, responsabilidade e compromisso,
               oferecendo orientação jurídica clara e estratégias adequadas para
               cada situação.
@@ -147,21 +157,24 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="rounded-[2rem] border border-[#e5ddd1] bg-white p-8 shadow-sm">
+          <div className="rounded-[2rem] border border-[#e5ddd1] bg-white p-6 shadow-sm md:p-7">
             <h3 className="text-xl font-semibold">Diferenciais</h3>
 
-            <ul className="mt-6 space-y-4 text-[#5c534a]">
-              <li>Atendimento presencial e online</li>
-              <li>Assessoria jurídica personalizada</li>
-              <li>Comunicação clara com o cliente</li>
-              <li>Atuação ética e estratégica</li>
-              <li>Compromisso com segurança jurídica</li>
-            </ul>
+            <div className="mt-6 grid gap-3 sm:grid-cols-2">
+              {diferenciais.map((item) => (
+                <div
+                  key={item}
+                  className="rounded-xl border border-[#ece4d8] bg-[#fcfaf7] p-4 text-sm leading-6 text-[#5c534a]"
+                >
+                  {item}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="atuacao" className="bg-white py-16">
+      <section id="atuacao" className="bg-white py-12 md:py-14">
         <div className="mx-auto max-w-6xl px-6">
           <p className="text-sm uppercase tracking-[0.2em] text-[#8a6a3f]">
             Áreas de atuação
@@ -171,7 +184,7 @@ export default function Home() {
             Serviços jurídicos oferecidos
           </h2>
 
-          <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {areas.map((area) => (
               <div
                 key={area.titulo}
@@ -185,8 +198,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="contato" className="mx-auto max-w-6xl px-6 py-16">
-        <div className="rounded-[2rem] bg-[#1f1a17] px-8 py-12 text-white md:px-12">
+      <section id="contato" className="mx-auto max-w-6xl px-6 py-12 md:py-14">
+        <div className="rounded-[2rem] bg-[#1f1a17] px-6 py-10 text-white md:px-12">
           <p className="text-sm uppercase tracking-[0.2em] text-[#c7a676]">
             Contato
           </p>
@@ -198,13 +211,29 @@ export default function Home() {
             responsabilidade e atenção ao seu caso.
           </p>
 
-          <div className="mt-8 space-y-3 text-lg">
-            <p>WhatsApp: (35) 99952-2272</p>
-            <p>
-              Endereço: Av. Cel. José Alves, 361 - Sala 304 - Vila Pinto,
-              Varginha/MG
-            </p>
-            <p>Atendimento presencial e online</p>
+          <div className="mt-7 grid gap-4 text-base md:grid-cols-3">
+            <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
+              <p className="text-sm uppercase tracking-[0.18em] text-[#c7a676]">
+                WhatsApp
+              </p>
+              <p className="mt-3">(35) 99952-2272</p>
+            </div>
+
+            <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
+              <p className="text-sm uppercase tracking-[0.18em] text-[#c7a676]">
+                Endereço
+              </p>
+              <p className="mt-3 leading-7">
+                Av. Cel. José Alves, 361 - Sala 304
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
+              <p className="text-sm uppercase tracking-[0.18em] text-[#c7a676]">
+                Atendimento
+              </p>
+              <p className="mt-3">Presencial e online</p>
+            </div>
           </div>
 
           <a
