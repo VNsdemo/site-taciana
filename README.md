@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Taciana Advocacia e Assessoria Jurídica
 
-## Getting Started
+Landing page pronta para deploy na Vercel.
 
-First, run the development server:
+## Como rodar localmente
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Acesse `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Como subir na Vercel
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Suba esta pasta para um repositório no GitHub.
+2. Entre na Vercel.
+3. Clique em **Add New Project**.
+4. Importe o repositório.
+5. Mantenha as configurações padrão de Next.js.
+6. Clique em **Deploy**.
 
-## Learn More
+## Onde editar as informações
 
-To learn more about Next.js, take a look at the following resources:
+O conteúdo principal está em:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```txt
+app/page.tsx
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Principais pontos para editar:
 
-## Deploy on Vercel
+- Link do WhatsApp: variável `whatsapp`.
+- Nome do escritório: cabeçalho e rodapé.
+- Áreas de atuação: array `areas`.
+- Diferenciais: array `diferenciais`.
+- Endereço e dados de contato: seções `Atendimento`, `Endereço` e `Contato`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Observação
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+O texto evita prometer resultados, mantendo uma comunicação mais adequada para serviços jurídicos.
