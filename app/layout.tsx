@@ -1,13 +1,16 @@
-import type { Metadata } from 'next';
-import './globals.css';
+import type { Metadata } from "next";
+import "./globals.css";
 
 export const metadata: Metadata = {
-  title: 'Taciana Advocacia e Assessoria Jurídica',
-  description:
-    'Atendimento jurídico presencial em Varginha/MG e online. Atuação em execuções, cobranças, contratos, sucessões, direito bancário e previdenciário.',
+  title: "Taciana Advocacia e Assessoria Jurídica",
+  description: "Atendimento jurídico com clareza, estratégia e confiança.",
 };
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="pt-BR">
       <body>{children}</body>
