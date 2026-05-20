@@ -1,40 +1,70 @@
-import Image from "next/image";
-
 export default function Home() {
+  const whatsapp =
+    "https://wa.me/5535999522272?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20atendimento%20jur%C3%ADdico.";
+
+  const areas = [
+    {
+      titulo: "Execuções e Cobranças",
+      texto: "Atuação em cobranças judiciais, cumprimento de sentença e medidas para efetivação de direitos.",
+    },
+    {
+      titulo: "Contratos",
+      texto: "Elaboração, revisão e análise contratual com foco em segurança jurídica e prevenção de riscos.",
+    },
+    {
+      titulo: "Defesa de Devedores",
+      texto: "Atuação estratégica em execuções, renegociações e defesa em cobranças judiciais e extrajudiciais.",
+    },
+    {
+      titulo: "Sucessões",
+      texto: "Orientação em inventários, partilhas e questões sucessórias com atendimento cuidadoso e seguro.",
+    },
+    {
+      titulo: "Direito Bancário",
+      texto: "Atuação em demandas envolvendo bancos, revisão contratual, dívidas e cobranças abusivas.",
+    },
+    {
+      titulo: "Direito Previdenciário",
+      texto: "Orientação sobre benefícios, aposentadorias, revisões e demais demandas previdenciárias.",
+    },
+  ];
+
+  const diferenciais = [
+    "Atendimento presencial e online",
+    "Comunicação clara com o cliente",
+    "Análise cuidadosa de cada caso",
+    "Estratégia jurídica personalizada",
+    "Atuação ética e responsável",
+    "Compromisso com segurança jurídica",
+  ];
+
   return (
     <main className="min-h-screen bg-[#f7f4ee] text-[#1f1a17]">
-      {/* Botao flutuante WhatsApp */}
       <a
-        href="https://wa.me/5535999522272"
+        href={whatsapp}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Falar no WhatsApp"
-        className="fixed bottom-6 right-6 z-50 rounded-full bg-[#8a6a3f] px-5 py-4 text-sm font-semibold text-white shadow-lg transition hover:scale-105 hover:opacity-95"
+        className="fixed bottom-5 right-5 z-50 rounded-full bg-[#8a6a3f] px-5 py-4 text-sm font-semibold text-white shadow-lg transition hover:scale-105 hover:opacity-95"
       >
         WhatsApp
       </a>
 
-      {/* Header */}
       <header className="sticky top-0 z-40 border-b border-[#e5ddd1] bg-white/90 backdrop-blur">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-          <div className="flex items-center gap-4">
-            <div className="flex h-14 w-14 items-center justify-center overflow-hidden rounded-xl border border-[#e5ddd1] bg-[#fcfaf7]">
-              <Image
-                src="/logo.png"
-                alt="Logo do escritório"
-                width={56}
-                height={56}
-                className="h-full w-full object-contain"
-              />
-            </div>
-
+        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-3">
+          <a href="#inicio" className="flex items-center gap-3">
+            <img
+              src="/logo-taciana.jpeg"
+              alt="Logo Taciana Advocacia"
+              className="h-14 w-14 rounded-full object-contain"
+            />
             <div>
-              <p className="text-lg font-semibold tracking-wide">
+              <p className="text-base font-semibold tracking-wide md:text-lg">
                 Taciana Advocacia e Assessoria Jurídica
               </p>
               <p className="text-sm text-[#6b6258]">Advogada</p>
             </div>
-          </div>
+          </a>
 
           <nav className="hidden gap-6 text-sm text-[#4e463e] md:flex">
             <a href="#sobre" className="transition hover:text-[#8a6a3f]">
@@ -43,9 +73,6 @@ export default function Home() {
             <a href="#atuacao" className="transition hover:text-[#8a6a3f]">
               Atuação
             </a>
-            <a href="#galeria" className="transition hover:text-[#8a6a3f]">
-              Escritório
-            </a>
             <a href="#contato" className="transition hover:text-[#8a6a3f]">
               Contato
             </a>
@@ -53,27 +80,26 @@ export default function Home() {
         </div>
       </header>
 
-      {/* Hero */}
-      <section className="mx-auto max-w-6xl px-6 py-20 md:py-28">
-        <div className="grid items-center gap-12 md:grid-cols-2">
+      <section id="inicio" className="mx-auto max-w-6xl px-6 py-12 md:py-16">
+        <div className="grid gap-10 md:grid-cols-[1.05fr_0.95fr] md:items-center">
           <div>
             <p className="mb-4 text-sm font-medium uppercase tracking-[0.25em] text-[#8a6a3f]">
               Advocacia e Assessoria Jurídica
             </p>
 
-            <h1 className="text-4xl font-bold leading-tight md:text-6xl">
+            <h1 className="max-w-4xl text-4xl font-bold leading-tight md:text-6xl">
               Atendimento jurídico com clareza, estratégia e confiança
             </h1>
 
-            <p className="mt-6 max-w-xl text-lg leading-8 text-[#5c534a]">
+            <p className="mt-5 max-w-2xl text-lg leading-8 text-[#5c534a]">
               Soluções jurídicas com atendimento humanizado, análise cuidadosa
               de cada caso e atuação comprometida com a proteção dos seus
               direitos.
             </p>
 
-            <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+            <div className="mt-7 flex flex-col gap-4 sm:flex-row">
               <a
-                href="https://wa.me/5535999522272"
+                href={whatsapp}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="rounded-xl bg-[#8a6a3f] px-6 py-3 text-center font-medium text-white transition hover:opacity-95"
@@ -90,212 +116,163 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="grid gap-6">
-            <div className="overflow-hidden rounded-[2rem] border border-[#e5ddd1] bg-white shadow-sm">
-              <div className="relative h-[420px] w-full">
-                <Image
-                  src="/foto-hero.jpg"
-                  alt="Foto profissional da advogada"
-                  fill
-                  className="object-cover"
-                  priority
-                />
-              </div>
-            </div>
-
-            <div className="rounded-[2rem] border border-[#e5ddd1] bg-white p-8 shadow-sm">
-              <div className="space-y-6">
-                <div>
-                  <p className="text-sm uppercase tracking-[0.2em] text-[#8a6a3f]">
-                    Atendimento
-                  </p>
-                  <p className="mt-2 leading-8 text-[#4e463e]">
-                    Presencial em Varginha/MG e também online, com atenção
-                    individualizada e orientação jurídica clara em todas as etapas.
-                  </p>
-                </div>
-
-                <div className="h-px bg-[#ece4d8]" />
-
-                <div>
-                  <p className="text-sm uppercase tracking-[0.2em] text-[#8a6a3f]">
-                    Endereço
-                  </p>
-                  <p className="mt-2 leading-8 text-[#4e463e]">
-                    Av. Cel. José Alves, 361 - Sala 304
-                    <br />
-                    Vila Pinto, Varginha/MG
-                  </p>
-                </div>
-              </div>
+          <div className="relative mx-auto w-full max-w-md">
+            <div className="absolute -left-5 -top-5 h-28 w-28 rounded-full bg-[#c7a676]/25 blur-2xl" />
+            <div className="absolute -bottom-5 -right-5 h-32 w-32 rounded-full bg-[#8a6a3f]/20 blur-2xl" />
+            <div className="relative overflow-hidden rounded-[2rem] border border-[#e5ddd1] bg-white p-3 shadow-sm">
+              <img
+                src="/taciana-foto.jpg"
+                alt="Advogada Taciana"
+                className="h-[560px] w-full rounded-[1.5rem] object-cover object-top"
+              />
             </div>
           </div>
         </div>
       </section>
 
-      {/* Sobre */}
-      <section id="sobre" className="mx-auto max-w-6xl px-6 py-16">
+      <section className="mx-auto max-w-6xl px-6 pb-12 md:pb-14">
+        <div className="rounded-[2rem] border border-[#e5ddd1] bg-white p-6 shadow-sm md:p-7">
+          <div className="grid gap-8 md:grid-cols-2">
+            <div>
+              <p className="text-sm uppercase tracking-[0.2em] text-[#8a6a3f]">
+                Atendimento
+              </p>
+
+              <p className="mt-4 leading-7 text-[#4e463e]">
+                Presencial em Varginha/MG e também online, com orientação clara,
+                atendimento individualizado e acompanhamento em todas as etapas.
+              </p>
+            </div>
+
+            <div>
+              <p className="text-sm uppercase tracking-[0.2em] text-[#8a6a3f]">
+                Endereço
+              </p>
+
+              <p className="mt-4 leading-7 text-[#4e463e]">
+                Av. Cel. José Alves, 361 - Sala 304
+                <br />
+                Vila Pinto, Varginha/MG
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="sobre" className="mx-auto max-w-6xl px-6 py-12 md:py-14">
         <div className="grid gap-8 md:grid-cols-2">
           <div>
             <p className="text-sm uppercase tracking-[0.2em] text-[#8a6a3f]">
               Sobre
             </p>
-            <h2 className="mt-3 text-3xl font-bold">Atuação séria e personalizada</h2>
 
-            <p className="mt-6 leading-8 text-[#5c534a]">
-              A atuação do escritório é voltada à prestação de serviços jurídicos
-              com ética, responsabilidade e compromisso com cada cliente.
+            <h2 className="mt-3 text-3xl font-bold">
+              Atuação séria e personalizada
+            </h2>
+
+            <p className="mt-5 leading-8 text-[#5c534a]">
+              O escritório atua com ética, responsabilidade e compromisso,
+              oferecendo orientação jurídica clara e estratégias adequadas para
+              cada situação.
             </p>
 
             <p className="mt-4 leading-8 text-[#5c534a]">
-              O objetivo é oferecer orientação segura, atendimento próximo e
-              estratégias jurídicas adequadas à realidade de cada caso.
+              Cada atendimento é conduzido de forma próxima, buscando segurança,
+              transparência e proteção aos interesses do cliente.
             </p>
-
-            <div className="mt-8 rounded-[2rem] border border-[#e5ddd1] bg-white p-8 shadow-sm">
-              <h3 className="text-xl font-semibold">Informações</h3>
-
-              <ul className="mt-6 space-y-4 text-[#5c534a]">
-                <li>Atendimento presencial e online</li>
-                <li>Assessoria jurídica personalizada</li>
-                <li>Clareza na comunicação com o cliente</li>
-                <li>Compromisso com ética e segurança jurídica</li>
-              </ul>
-            </div>
           </div>
 
-          <div className="overflow-hidden rounded-[2rem] border border-[#e5ddd1] bg-white shadow-sm">
-            <div className="relative h-[520px] w-full">
-              <Image
-                src="/foto-sobre.jpg"
-                alt="Foto da advogada em atendimento"
-                fill
-                className="object-cover"
-              />
+          <div className="rounded-[2rem] border border-[#e5ddd1] bg-white p-6 shadow-sm md:p-7">
+            <h3 className="text-xl font-semibold">Diferenciais</h3>
+
+            <div className="mt-6 grid gap-3 sm:grid-cols-2">
+              {diferenciais.map((item) => (
+                <div
+                  key={item}
+                  className="rounded-xl border border-[#ece4d8] bg-[#fcfaf7] p-4 text-sm leading-6 text-[#5c534a]"
+                >
+                  {item}
+                </div>
+              ))}
             </div>
           </div>
         </div>
       </section>
 
-      {/* Áreas */}
-      <section id="atuacao" className="bg-white py-16">
+      <section id="atuacao" className="bg-white py-12 md:py-14">
         <div className="mx-auto max-w-6xl px-6">
           <p className="text-sm uppercase tracking-[0.2em] text-[#8a6a3f]">
             Áreas de atuação
           </p>
+
           <h2 className="mt-3 text-3xl font-bold">
             Serviços jurídicos oferecidos
           </h2>
 
-          <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            <div className="rounded-[1.5rem] border border-[#ece4d8] bg-[#fcfaf7] p-6">
-              <h3 className="text-xl font-semibold">Execuções</h3>
-              <p className="mt-3 leading-7 text-[#5c534a]">
-                Atuação em cobranças judiciais, cumprimento de sentença e medidas
-                para efetivação de direitos.
-              </p>
-            </div>
-
-            <div className="rounded-[1.5rem] border border-[#ece4d8] bg-[#fcfaf7] p-6">
-              <h3 className="text-xl font-semibold">Contratos</h3>
-              <p className="mt-3 leading-7 text-[#5c534a]">
-                Elaboração, revisão e análise contratual com foco em segurança
-                jurídica e prevenção de riscos.
-              </p>
-            </div>
-
-            <div className="rounded-[1.5rem] border border-[#ece4d8] bg-[#fcfaf7] p-6">
-              <h3 className="text-xl font-semibold">Direito do Consumidor</h3>
-              <p className="mt-3 leading-7 text-[#5c534a]">
-                Defesa dos direitos do consumidor em cobranças indevidas,
-                negativação e falhas na prestação de serviços.
-              </p>
-            </div>
-
-            <div className="rounded-[1.5rem] border border-[#ece4d8] bg-[#fcfaf7] p-6">
-              <h3 className="text-xl font-semibold">Sucessões</h3>
-              <p className="mt-3 leading-7 text-[#5c534a]">
-                Orientação em inventários, partilhas e questões sucessórias com
-                atendimento cuidadoso e estratégico.
-              </p>
-            </div>
-
-            <div className="rounded-[1.5rem] border border-[#ece4d8] bg-[#fcfaf7] p-6">
-              <h3 className="text-xl font-semibold">Direito Bancário</h3>
-              <p className="mt-3 leading-7 text-[#5c534a]">
-                Atuação em demandas envolvendo instituições financeiras, revisão
-                contratual e cobranças abusivas.
-              </p>
-            </div>
-
-            <div className="rounded-[1.5rem] border border-[#ece4d8] bg-[#fcfaf7] p-6">
-              <h3 className="text-xl font-semibold">Direito Previdenciário</h3>
-              <p className="mt-3 leading-7 text-[#5c534a]">
-                Orientação sobre benefícios, aposentadorias, revisões e demais
-                demandas previdenciárias.
-              </p>
-            </div>
+          <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+            {areas.map((area) => (
+              <div
+                key={area.titulo}
+                className="rounded-[1.5rem] border border-[#ece4d8] bg-[#fcfaf7] p-6 transition hover:-translate-y-1 hover:shadow-sm"
+              >
+                <h3 className="text-xl font-semibold">{area.titulo}</h3>
+                <p className="mt-3 leading-7 text-[#5c534a]">{area.texto}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Galeria / imagens extras */}
-      <section id="galeria" className="mx-auto max-w-6xl px-6 py-16">
-        <p className="text-sm uppercase tracking-[0.2em] text-[#8a6a3f]">
-          Escritório
-        </p>
-        <h2 className="mt-3 text-3xl font-bold">Ambiente profissional e acolhedor</h2>
+      <section id="contato" className="mx-auto max-w-6xl px-6 py-12 md:py-14">
+        <div className="rounded-[2rem] bg-[#1f1a17] px-6 py-10 text-white md:px-12">
+          <div className="flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
+            <div>
+              <p className="text-sm uppercase tracking-[0.2em] text-[#c7a676]">
+                Contato
+              </p>
 
-        <div className="mt-10 grid gap-6 md:grid-cols-3">
-          <div className="overflow-hidden rounded-[1.5rem] border border-[#e5ddd1] bg-white shadow-sm">
-            <div className="relative h-72 w-full">
-              <Image
-                src="/foto-hero.jpg"
-                alt="Foto profissional 1"
-                fill
-                className="object-cover"
-              />
+              <h2 className="mt-3 text-3xl font-bold">Agende seu atendimento</h2>
+
+              <p className="mt-4 max-w-2xl leading-8 text-[#ddd6cf]">
+                Entre em contato para receber orientação jurídica com clareza,
+                responsabilidade e atenção ao seu caso.
+              </p>
             </div>
+
+            <img
+              src="/logo-taciana.jpeg"
+              alt="Logo Taciana Advocacia"
+              className="h-28 w-28 rounded-full bg-white object-contain p-2"
+            />
           </div>
 
-          <div className="overflow-hidden rounded-[1.5rem] border border-[#e5ddd1] bg-white shadow-sm">
-            <div className="relative h-72 w-full">
-              <Image
-                src="/foto-sobre.jpg"
-                alt="Foto profissional 2"
-                fill
-                className="object-cover"
-              />
+          <div className="mt-7 grid gap-4 text-base md:grid-cols-3">
+            <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
+              <p className="text-sm uppercase tracking-[0.18em] text-[#c7a676]">
+                WhatsApp
+              </p>
+              <p className="mt-3">(35) 99952-2272</p>
             </div>
-          </div>
 
-          <div className="flex h-72 items-center justify-center rounded-[1.5rem] border border-dashed border-[#cdbda8] bg-[#fcfaf7] p-6 text-center text-[#7a6f63]">
-            Espaço reservado para mais uma foto do escritório, atendimento ou retrato profissional.
-          </div>
-        </div>
-      </section>
+            <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
+              <p className="text-sm uppercase tracking-[0.18em] text-[#c7a676]">
+                Endereço
+              </p>
+              <p className="mt-3 leading-7">
+                Av. Cel. José Alves, 361 - Sala 304
+              </p>
+            </div>
 
-      {/* Contato */}
-      <section id="contato" className="mx-auto max-w-6xl px-6 py-16">
-        <div className="rounded-[2rem] bg-[#1f1a17] px-8 py-12 text-white md:px-12">
-          <p className="text-sm uppercase tracking-[0.2em] text-[#c7a676]">
-            Contato
-          </p>
-          <h2 className="mt-3 text-3xl font-bold">Agende seu atendimento</h2>
-
-          <p className="mt-4 max-w-2xl leading-8 text-[#ddd6cf]">
-            Entre em contato para receber orientação jurídica com clareza,
-            responsabilidade e atenção ao seu caso.
-          </p>
-
-          <div className="mt-8 space-y-3 text-lg">
-            <p>WhatsApp: (35) 99952-2272</p>
-            <p>Endereço: Av. Cel. José Alves, 361 - Sala 304 - Vila Pinto, Varginha/MG</p>
-            <p>Atendimento presencial e online</p>
+            <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
+              <p className="text-sm uppercase tracking-[0.18em] text-[#c7a676]">
+                Atendimento
+              </p>
+              <p className="mt-3">Presencial e online</p>
+            </div>
           </div>
 
           <a
-            href="https://wa.me/5535999522272"
+            href={whatsapp}
             target="_blank"
             rel="noopener noreferrer"
             className="mt-8 inline-block rounded-xl bg-[#8a6a3f] px-6 py-3 font-medium text-white transition hover:opacity-95"
@@ -305,10 +282,20 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Rodape */}
       <footer className="border-t border-[#e5ddd1] bg-white">
-        <div className="mx-auto max-w-6xl px-6 py-6 text-sm text-[#6b6258]">
-          © 2026 Taciana Advocacia e Assessoria Jurídica. Todos os direitos reservados.
+        <div className="mx-auto flex max-w-6xl flex-col gap-4 px-6 py-6 text-sm text-[#6b6258] md:flex-row md:items-center md:justify-between">
+          <div className="flex items-center gap-3">
+            <img
+              src="/logo-taciana.jpeg"
+              alt="Logo Taciana Advocacia"
+              className="h-10 w-10 rounded-full object-contain"
+            />
+            <span>
+              © 2026 Taciana Advocacia e Assessoria Jurídica. Todos os direitos
+              reservados.
+            </span>
+          </div>
+          <span>Varginha/MG</span>
         </div>
       </footer>
     </main>
