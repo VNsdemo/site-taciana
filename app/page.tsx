@@ -116,14 +116,14 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="relative mx-auto w-full max-w-sm">
-            <div className="absolute -left-5 -top-5 h-28 w-28 rounded-full bg-[#c7a676]/25 blur-2xl" />
-            <div className="absolute -bottom-5 -right-5 h-32 w-32 rounded-full bg-[#8a6a3f]/20 blur-2xl" />
-            <div className="relative overflow-hidden rounded-[2rem] border border-[#e5ddd1] bg-white p-3 shadow-sm">
+          <div className="relative mx-auto w-full max-w-[17rem]">
+            <div className="absolute -left-4 -top-4 h-20 w-20 rounded-full bg-[#c7a676]/25 blur-2xl" />
+            <div className="absolute -bottom-4 -right-4 h-24 w-24 rounded-full bg-[#8a6a3f]/20 blur-2xl" />
+            <div className="relative overflow-hidden rounded-[1.5rem] border border-[#e5ddd1] bg-white p-2 shadow-sm">
               <img
                 src="/taciana-foto.jpg"
                 alt="Advogada Taciana"
-                className="h-[392px] w-full rounded-[1.5rem] object-cover object-top"
+                className="h-[274px] w-full rounded-[1.25rem] object-cover object-top"
               />
             </div>
           </div>
