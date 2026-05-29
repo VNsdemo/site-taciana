@@ -183,8 +183,8 @@ export default function Home() {
 
             <div className="mt-6 overflow-hidden rounded-[2rem] border border-[#e5ddd1] bg-white p-3 shadow-sm">
               <img
-                src="/direito-balanca.svg"
-                alt="Imagem relacionada ao Direito com balança da justiça e livros jurídicos"
+                src="/imagem-direito.avif"
+                alt="Balança da justiça em imagem 3D relacionada ao Direito"
                 className="h-64 w-full rounded-[1.5rem] object-cover"
               />
             </div>
