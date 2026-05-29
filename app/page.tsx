@@ -116,14 +116,14 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="relative mx-auto w-full max-w-md">
+          <div className="relative mx-auto w-full max-w-sm">
             <div className="absolute -left-5 -top-5 h-28 w-28 rounded-full bg-[#c7a676]/25 blur-2xl" />
             <div className="absolute -bottom-5 -right-5 h-32 w-32 rounded-full bg-[#8a6a3f]/20 blur-2xl" />
             <div className="relative overflow-hidden rounded-[2rem] border border-[#e5ddd1] bg-white p-3 shadow-sm">
               <img
                 src="/taciana-foto.jpg"
                 alt="Advogada Taciana"
-                className="h-[560px] w-full rounded-[1.5rem] object-cover object-top"
+                className="h-[392px] w-full rounded-[1.5rem] object-cover object-top"
               />
             </div>
           </div>
@@ -180,6 +180,14 @@ export default function Home() {
               Cada atendimento é conduzido de forma próxima, buscando segurança,
               transparência e proteção aos interesses do cliente.
             </p>
+
+            <div className="mt-6 overflow-hidden rounded-[2rem] border border-[#e5ddd1] bg-white p-3 shadow-sm">
+              <img
+                src="/direito-balanca.svg"
+                alt="Imagem relacionada ao Direito com balança da justiça e livros jurídicos"
+                className="h-64 w-full rounded-[1.5rem] object-cover"
+              />
+            </div>
           </div>
 
           <div className="rounded-[2rem] border border-[#e5ddd1] bg-white p-6 shadow-sm md:p-7">
