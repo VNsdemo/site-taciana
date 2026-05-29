@@ -55,12 +55,12 @@ export default function Home() {
           <a href="#inicio" className="flex items-center gap-3">
             <img
               src="/logo-taciana.jpeg"
-              alt="Logo Taciana Advocacia"
+              alt="Logo Taciana S. Vieira Naia Advocacia"
               className="h-14 w-14 rounded-full object-contain"
             />
             <div>
               <p className="text-base font-semibold tracking-wide md:text-lg">
-                Taciana Advocacia e Assessoria Jurídica
+                Taciana S. Vieira Naia Advocacia e Assessoria Jurídica
               </p>
               <p className="text-sm text-[#6b6258]">Advogada</p>
             </div>
@@ -122,7 +122,7 @@ export default function Home() {
             <div className="relative overflow-hidden rounded-[1.5rem] border border-[#e5ddd1] bg-white p-2 shadow-sm">
               <img
                 src="/taciana-foto.jpg"
-                alt="Advogada Taciana"
+                alt="Advogada Taciana S. Vieira Naia"
                 className="h-[274px] w-full rounded-[1.25rem] object-cover object-top"
               />
             </div>
@@ -249,7 +249,7 @@ export default function Home() {
 
             <img
               src="/logo-taciana.jpeg"
-              alt="Logo Taciana Advocacia"
+              alt="Logo Taciana S. Vieira Naia Advocacia"
               className="h-28 w-28 rounded-full bg-white object-contain p-2"
             />
           </div>
@@ -295,11 +295,11 @@ export default function Home() {
           <div className="flex items-center gap-3">
             <img
               src="/logo-taciana.jpeg"
-              alt="Logo Taciana Advocacia"
+              alt="Logo Taciana S. Vieira Naia Advocacia"
               className="h-10 w-10 rounded-full object-contain"
             />
             <span>
-              © 2026 Taciana Advocacia e Assessoria Jurídica. Todos os direitos
+              © 2026 Taciana S. Vieira Naia Advocacia e Assessoria Jurídica. Todos os direitos
               reservados.
             </span>
           </div>
