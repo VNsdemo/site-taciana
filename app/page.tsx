@@ -88,13 +88,13 @@ export default function Home() {
             </p>
 
             <h1 className="max-w-4xl text-4xl font-bold leading-tight md:text-6xl">
-              Atendimento jurídico com clareza, estratégia e confiança
+              Advocacia em Varginha/MG com clareza, estratégia e confiança
             </h1>
 
             <p className="mt-5 max-w-2xl text-lg leading-8 text-[#5c534a]">
-              Soluções jurídicas com atendimento humanizado, análise cuidadosa
-              de cada caso e atuação comprometida com a proteção dos seus
-              direitos.
+              Taciana S. Vieira Naia oferece assessoria jurídica com atendimento
+              humanizado, análise cuidadosa de cada caso e atuação comprometida
+              com a proteção dos seus direitos.
             </p>
 
             <div className="mt-7 flex flex-col gap-4 sm:flex-row">
@@ -122,7 +122,7 @@ export default function Home() {
             <div className="relative overflow-hidden rounded-[1.5rem] border border-[#e5ddd1] bg-white p-2 shadow-sm">
               <img
                 src="/taciana-foto.jpg"
-                alt="Advogada Taciana S. Vieira Naia"
+                alt="Taciana S. Vieira Naia, advogada em Varginha/MG"
                 className="h-[274px] w-full rounded-[1.25rem] object-cover object-top"
               />
             </div>

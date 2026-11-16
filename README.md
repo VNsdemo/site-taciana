@@ -1,8 +1,8 @@
 # Taciana S. Vieira Naia Advocacia e Assessoria Jurídica
 
-Landing page pronta para deploy na Vercel.
+Landing page em Next.js, preparada para deploy na Vercel.
 
-## Como rodar localmente
+## Rodar localmente
 
 ```bash
 npm install
@@ -11,31 +11,30 @@ npm run dev
 
 Acesse `http://localhost:3000`.
 
-## Como subir na Vercel
+## SEO incluído
 
-1. Suba esta pasta para um repositório no GitHub.
-2. Entre na Vercel.
-3. Clique em **Add New Project**.
-4. Importe o repositório.
-5. Mantenha as configurações padrão de Next.js.
-6. Clique em **Deploy**.
+- Metadados em português do Brasil com título e descrição específicos.
+- URL canônica padronizada em `https://www.taciananaia.com.br/`.
+- Sitemap automático em `/sitemap.xml`.
+- Regras de rastreamento em `/robots.txt`.
+- Dados estruturados `LegalService` com nome, telefone e endereço informados no próprio site.
+- Open Graph e metadados para compartilhamento em redes sociais.
 
-## Onde editar as informações
+A versão sem `www` deve continuar redirecionando para a versão com `www`, para manter a mesma URL canônica em todos os sinais do site.
 
-O conteúdo principal está em:
+## Publicar na Vercel
 
-```txt
-app/page.tsx
-```
+1. Atualize os arquivos deste projeto no repositório conectado à Vercel.
+2. A Vercel fará um novo deploy automaticamente (caso a integração com Git esteja ativa).
+3. Depois que o deploy terminar, confira estas URLs:
+   - `https://www.taciananaia.com.br/`
+   - `https://www.taciananaia.com.br/robots.txt`
+   - `https://www.taciananaia.com.br/sitemap.xml`
+4. No Google Search Console, envie `sitemap.xml` na seção **Indexação > Sitemaps**.
+5. Inspecione `https://www.taciananaia.com.br/` e solicite uma nova indexação depois do deploy.
 
-Principais pontos para editar:
+## Onde editar o conteúdo
 
-- Link do WhatsApp: variável `whatsapp`.
-- Nome do escritório: cabeçalho e rodapé.
-- Áreas de atuação: array `areas`.
-- Diferenciais: array `diferenciais`.
-- Endereço e dados de contato: seções `Atendimento`, `Endereço` e `Contato`.
+O conteúdo principal está em `app/page.tsx`.
 
-## Observação
-
-O texto evita prometer resultados, mantendo uma comunicação mais adequada para serviços jurídicos.
+Os metadados globais estão em `app/layout.tsx`. O sitemap e as regras de rastreamento estão em `app/sitemap.ts` e `app/robots.ts`.
